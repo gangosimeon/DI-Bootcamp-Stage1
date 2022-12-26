@@ -75,7 +75,7 @@ for i in valeurs:
         
 
 print("EXERCICE 6:Boucle While\n")
-#Toujours demander le nom utilisateur,a moins que le nom soit egale a mon nom. 
+#Toujours demander le nom utilisateur,a moins que le nom soit egale a mon nom "simeon". 
 nom=input("Entrer votre nom: ")
 while nom.capitalize()!="Simeon".capitalize():
     nom=input("Entrer votre nom: ")
@@ -96,7 +96,7 @@ if fruit.lower() in liste_fruits:
     print("Vous avez choisi l'un de vos fruits préférés ! Prendre plaisir!\n")
 else:
     print("Vous avez choisi un nouveau fruit. J'espère que tu apprécies !\n")
-    
+  
 print("EXERCICE 8: Qui A Commander Une Pizza?\n")
 
 garniture=""
@@ -154,3 +154,26 @@ while sandwich_orders!=[]:
     print("sandwich_orders=",sandwich_orders)
 for sandw in finished_sandwiches:
     print("J'ai prepare votre sandwiche ",sandw)
+
+
+print("EXERCICE 11: Sandwich Orders#2\n")
+#pour executer cette partie , il va falloir mettre "l'exercice 10" en commentaire 
+#1)
+nombre_pastrami=sandwich_orders.count("pastrami")
+while nombre_pastrami < 3:
+    garniture=input("Ajouter un sandwich 'pastrami' : ")
+    while garniture.lower()!="pastrami":
+        print("Erreur: Saissez 'pastrami' s'il vous plait!")
+        garniture=input("Ajouter un sandwich 'pastrami' : ")
+    sandwich_orders.append(garniture)
+    nombre_pastrami+=1
+print("liste de Sandwich_orders :", sandwich_orders)
+  
+#2)
+finished_sandwiches=[]
+print("Nous n'avons plus de sandwich 'pastrami' !")
+while "pastrami" in sandwich_orders:
+    sandwich_orders.remove("pastrami")
+#3)
+finished_sandwiches=sandwich_orders.copy()
+print("liste des sandwiches finis de preparer : ",finished_sandwiches)
