@@ -1,10 +1,7 @@
 print("---------------------------------------------------------")
 print("EXERCICE 1 : Hello world\n")
 
-i=0
-while i<4:
-    print("Hello world")
-    i+=1
+print(4*"Hello world \n")
 
 print("---------------------------------------------------------")
 
