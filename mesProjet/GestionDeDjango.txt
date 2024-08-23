@@ -1,0 +1,11 @@
+GESTION D'UN PROJET  DJANGO
+
+1-Environnement virtual
+
+	*python -m venv nom_de_environnement_virtuel
+	*pip install requests
+2-Creation du projet django
+	*django-admin startproject nom_du_projet
+	*python manage.py runserver  ==> pour tester notre application fonctionne
+3-Creation de l'application
+	*python manage.py startapp nom_de_application

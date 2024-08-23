@@ -1,0 +1,3 @@
+application qui montre les noms des entrepises existants au Burkina Faso(voir en afrique)
+----Le nom des entreprises avec des liens qui donnent la position GPS de l'entreprises.
+(si tout marche , on le fera pour tous les services disponibles )

@@ -129,7 +129,7 @@ print()
 disney_users_A={}
 j=0
 for user in users:
-    if "i" in user.lower() or "p" in user.lower():
+    if user[0].lower()=="m" or user[0].lower()=="p":
         disney_users_A[user]=j
         j+=1
 print(disney_users_A)
